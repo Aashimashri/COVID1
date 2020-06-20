@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+
         android:padding="10dp"
         android:background="@drawable/india2">
 
@@ -380,8 +381,84 @@
                 android:orientation="horizontal"
                 android:padding="5dp">
 
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_country"
+                android:layout_width="125dp"
+                android:layout_height="105dp"
+                android:layout_margin="15dp"
+                android:padding="5dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/d"
+                        android:gravity="center"
+                        android:text="Country Wise Report"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_measures"
+                android:layout_width="125dp"
+                android:layout_height="105dp"
+                android:layout_margin="15dp"
+                android:padding="5dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill_vertical"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/d"
+                        android:gravity="center"
+                        android:text="Precautions and Measures"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+
+
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/card_measures"
+                    android:id="@+id/card_video"
                     android:layout_width="125dp"
                     android:layout_height="105dp"
                     android:layout_margin="15dp"
@@ -402,7 +479,7 @@
                             android:layout_gravity="center_horizontal"
                             android:fontFamily="@font/d"
                             android:gravity="center"
-                            android:text="Precautions And Measures"
+                            android:text="How to protect yourself to others"
                             android:textColor="#000"
                             android:textSize="17sp"
                             android:textStyle="bold" />
@@ -411,7 +488,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/card_myths"
+                    android:id="@+id/card_vaccine"
                     android:layout_width="125dp"
                     android:layout_height="105dp"
                     android:layout_margin="15dp"
@@ -428,13 +505,13 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView13"
+                            android:id="@+id/textView1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:fontFamily="@font/d"
                             android:gravity="center"
-                            android:text="Myths"
+                            android:text="Clinical Trials"
                             android:textColor="#000"
                             android:textSize="17sp"
                             android:textStyle="bold" />
@@ -444,7 +521,6 @@
 
 
             </LinearLayout>
-
 
 
         </LinearLayout>

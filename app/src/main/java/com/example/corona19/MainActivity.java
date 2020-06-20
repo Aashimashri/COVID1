@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -14,7 +13,10 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.corona19.Country.AffectedCountries;
 import com.example.corona19.Graph.GraphWiseReport;
+import com.example.corona19.Videos.vaccine;
+import com.example.corona19.Videos.video;
 import com.example.corona19.measures.Measures;
 
 import org.json.JSONArray;
@@ -24,7 +26,7 @@ import org.json.JSONObject;
 public class MainActivity extends AppCompatActivity {
 
     private TextView txt_total, txt_active, txt_recovered, txt_deaths, txt_updated;
-    private CardView card_today, card_tests,card_graph, card_state,card_measures,card_myths;
+    private CardView card_today, card_tests,card_graph, card_state,card_measures,card_country,card_video,card_vaccine;
 
     //RequestQueue object declaration for fetching the data from API.
     private RequestQueue requestQueue;
@@ -47,7 +49,10 @@ public class MainActivity extends AppCompatActivity {
         card_state=findViewById(R.id.card_state);
         card_graph=findViewById(R.id.card_graph);
         card_measures=findViewById(R.id.card_measures);
-        card_myths=findViewById(R.id.card_myths);
+        card_country=findViewById(R.id.card_country);
+        card_video=findViewById(R.id.card_video);
+        card_vaccine=findViewById(R.id.card_vaccine);
+
 
 
         //Creating a new Volley request for fetching the data.
@@ -119,11 +124,26 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        card_myths.setOnClickListener(new View.OnClickListener() {
+        card_country.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Coming Soon", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(MainActivity.this, AffectedCountries.class);
+                startActivity(intent);
 
+            }
+        });
+        card_video.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, video.class);
+                startActivity(intent);
+            }
+        });
+        card_vaccine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, vaccine.class);
+                startActivity(intent);
             }
         });
     }

@@ -14,9 +14,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.corona19.measures.Measures" />
-        <activity android:name="com.example.corona19.measures.Precautions"/>
-        <activity android:name="com.example.corona19.measures.Symptom"/>
+        <activity android:name=".Videos.vaccine"></activity>
+        <activity android:name=".Videos.video"/>
+        <activity android:name=".measures.Measures" />
+        <activity android:name=".measures.Precautions" />
+        <activity android:name=".measures.Symptom" />
+        <activity android:name=".Country.AffectedCountries"/>
+        <activity android:name=".Country.Details"/>
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

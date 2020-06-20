@@ -17,6 +17,7 @@
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="357dp"
+
         android:layout_height="381dp"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="6dp"
