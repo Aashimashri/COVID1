@@ -44,6 +44,7 @@ public class AffectedCountries extends AppCompatActivity {
         setContentView(R.layout.activity_affected_countries);
         listView=findViewById(R.id.listview);
         simpleArcLoader=findViewById(R.id.loader);
+        
 
         getSupportActionBar().setTitle("Affected Countries");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
